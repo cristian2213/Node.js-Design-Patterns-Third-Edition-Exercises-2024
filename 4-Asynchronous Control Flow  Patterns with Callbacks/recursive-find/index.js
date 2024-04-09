@@ -29,9 +29,6 @@ let filesFound = [];
 let totalFilesFound = 0;
 let processesDone = 0;
 
-let runningDirectories = 0;
-let runningFiles;
-
 function recursiveFind(dir, keyword, cb) {
 	fs.readdir(dir, (err, files) => {
 		if (err) return cb(err);
